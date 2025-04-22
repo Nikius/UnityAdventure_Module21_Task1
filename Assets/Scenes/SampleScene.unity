@@ -123,6 +123,54 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &126254053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126254055}
+  - component: {fileID: 126254054}
+  m_Layer: 0
+  m_Name: BlowExample
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &126254054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126254053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26374bb63b5a4ffa907d0327d243585b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _blowVFXPrefab: {fileID: 1429944115993358108, guid: 20f42162f2bbb9941a3eed0f7c816c9b,
+    type: 3}
+  _blowRadius: 4
+  _blowStrength: 10
+--- !u!4 &126254055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126254053}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.2439795, y: 12.551348, z: 0.030032836}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,7 +1003,7 @@ GameObject:
   - component: {fileID: 2134665110}
   - component: {fileID: 2134665111}
   m_Layer: 0
-  m_Name: MouseController
+  m_Name: CarryExample
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -988,13 +1036,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc5f09cb52648746a22e7046dce3f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blowVFXPrefab: {fileID: 1429944115993358108, guid: 20f42162f2bbb9941a3eed0f7c816c9b,
-    type: 3}
-  _movableObjectLayerMask:
-    serializedVersion: 2
-    m_Bits: 8
-  _blowRadius: 4
-  _blowStrength: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1005,3 +1046,4 @@ SceneRoots:
   - {fileID: 537651025}
   - {fileID: 852522040}
   - {fileID: 2134665110}
+  - {fileID: 126254055}
