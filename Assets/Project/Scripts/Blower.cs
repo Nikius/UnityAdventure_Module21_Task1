@@ -19,7 +19,7 @@ namespace Project.Scripts
 
         public void MakeBlow(Ray indicatingRay)
         {
-            if (!Physics.Raycast(indicatingRay, out RaycastHit hit))
+            if (Physics.Raycast(indicatingRay, out RaycastHit hit) == false)
                 return;
             
             Collider[] blownObjectsColliders = Physics.OverlapSphere(hit.point, _blowRadius);

@@ -10,7 +10,7 @@ namespace Project.Scripts
         
         public void TakeObject(Ray indicatingRay)
         {
-            if (!IsCarrying
+            if (IsCarrying == false
                 && Physics.Raycast(indicatingRay, out RaycastHit hit))
             {
                 IGrabble grabbedObject = hit.collider.GetComponent<IGrabble>();
@@ -36,7 +36,7 @@ namespace Project.Scripts
 
         public void Carry(Ray indicatingRay)
         {
-            if (!Physics.Raycast(indicatingRay, out RaycastHit hit))
+            if (Physics.Raycast(indicatingRay, out RaycastHit hit) == false)
                 return;
             
             _carriedObject.OnDrag(hit.point);
